@@ -11,7 +11,7 @@ import Link from "next/link";
 export default function Sidebar() {
     return (
         <aside className="w-[18rem]" aria-label="Sidebar">
-            <div className="h-screen overflow-y-auto py-4 px-3 bg-gray-200 rounded dark:bg-gray-800">
+            <div className="h-screen sticky top-0 overflow-y-auto py-4 px-3 bg-gray-200 rounded dark:bg-gray-800">
                 <Link href="https://ironwoodrpg.com/" target="_blank" className="flex items-center pl-2.5 mb-5">
                     <Image src={IronwoodIcon} className="mr-2 h-10 w-10 rounded-12"
                          alt="IronwoodRPG Icon"/>
@@ -28,7 +28,7 @@ export default function Sidebar() {
                             Alpha
                         </span>
                         <span className="bg-lime-100 text-lime-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-lime-200 dark:text-lime-900">
-                            v0.5.8
+                            v0.5.13
                         </span>
                         {/*<button type="button"*/}
                         {/*        className="ml-auto -mx-1.5 -my-1.5 bg-blue-50 text-blue-900 rounded-lg focus:ring-2 focus:ring-blue-400 p-1 hover:bg-blue-200 inline-flex h-6 w-6 dark:bg-blue-900 dark:text-blue-400 dark:hover:bg-blue-800"*/}
@@ -92,15 +92,15 @@ export default function Sidebar() {
                             <Image src={InventoryIcon} className="h-8 w-8"
                                    alt="Inventory Icon"/>
                             <span className="flex-1 ml-3 whitespace-nowrap">Items</span>
-                            <span className="inline-flex justify-center items-center px-2 ml-3 text-sm font-medium text-red-900 bg-red-300 rounded-full dark:bg-red-700 dark:text-red-300">
-                                WIP
+                            <span className="inline-flex justify-center items-center px-2 ml-3 text-sm font-medium text-lime-900 bg-lime-200 rounded-full dark:bg-lime-700 dark:text-lime-300">
+                                NEW
                             </span>
                         </Link>
                     </li>
                 </ul>
                 <ul className="pt-4 mt-4 space-y-2 border-t border-gray-400 dark:border-gray-700">
                     <li className="text-center">
-                        <span className="justify-center">Ironwood RPG Community</span>
+                        <span className="justify-center font-semibold">Ironwood RPG Community</span>
                     </li>
                     <li className="">
                         <a href="https://discord.gg/tNAH9fMVqx" target="_blank" rel="noreferrer"

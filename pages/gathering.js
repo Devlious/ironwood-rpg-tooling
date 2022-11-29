@@ -11,7 +11,7 @@ import Fishing from '/components/gathering/fishing'
 import FishingIcon from '/public/images/fishing.png'
 
 import Tab from '/components/Tab'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 export default function Gathering() {
     let [categories] = useState({

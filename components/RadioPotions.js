@@ -55,10 +55,6 @@ export default function RadioPotions({ choices}) {
                                                             checked ? 'text-sky-100' : 'text-gray-600'
                                                         }`}
                                                     >
-                                                        <span>
-                                                            Level {choice.level}
-                                                        </span>{' '}
-                                                        <span aria-hidden="true">&middot;</span>{' '}
                                                         <span>{choice.percentage} %</span>
 
                                                     </RadioGroup.Description>
