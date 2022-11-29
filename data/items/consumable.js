@@ -38,7 +38,7 @@ import DiamondCraftingIcon from '/public/images/diamond-crafting-potion.png'
 ////////////////////
 
 import CookedShrimpIcon from '/public/images/food-cooked-shrimp.png'
-import CookedCodIcon from '/public/images/food-cooked-Cod.png'
+import CookedCodIcon from '/public/images/food-cooked-cod.png'
 import CookedSalmonIcon from '/public/images/food-cooked-salmon.png'
 import CookedBassIcon from '/public/images/food-cooked-bass.png'
 import CookedLobsterIcon from '/public/images/food-cooked-lobster.png'
