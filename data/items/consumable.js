@@ -32,6 +32,16 @@ import BlackcurrantIcon from '/public/images/food-blackcurrant.png'
 import RaspberryIcon from '/public/images/food-raspberry.png'
 
 
+////////////////////
+//     ARROWS     //
+////////////////////
+
+import CopperArrowIcon from '/public/images/arrow-copper.png'
+import IronArrowIcon from '/public/images/arrow-iron.png'
+import SilverArrowIcon from '/public/images/arrow-silver.png'
+import GoldArrowIcon from '/public/images/arrow-gold.png'
+import CobaltArrowIcon from '/public/images/arrow-cobalt.png'
+import ObsidianArrowIcon from '/public/images/arrow-obsidian.png'
 
 export const potions = [
     ...combat,
@@ -288,5 +298,116 @@ export const fruits = [
             'consumption',
             'compost'
         ]
+    },
+]
+
+export const arrows = [
+    {
+        name: 'Copper Arrow',
+        type: 'consumable',
+        tool: 'arrow',
+        icon: CopperArrowIcon,
+        description: 'This is a Copper Arrow, you can use it in combat',
+        level: 1,
+        vendor_price: 1,
+        skill_boost: 'combat',
+        boost: {
+            attack: 6,
+        },
+        attrs: [
+            'sellable',
+            'combat',
+            'consumption',
+        ],
+    },
+    {
+        name: 'Iron Arrow',
+        type: 'consumable',
+        tool: 'arrow',
+        icon: IronArrowIcon,
+        description: 'This is an Iron Arrow, you can use it in combat',
+        level: 10,
+        vendor_price: 2,
+        skill_boost: 'combat',
+        boost: {
+            attack: 12,
+        },
+        attrs: [
+            'sellable',
+            'combat',
+            'consumption',
+        ],
+    },
+    {
+        name: 'Silver Arrow',
+        type: 'consumable',
+        tool: 'arrow',
+        icon: SilverArrowIcon,
+        description: 'This is a Silver Arrow, you can use it in combat',
+        level: 25,
+        vendor_price: 3,
+        skill_boost: 'combat',
+        boost: {
+            attack: 18,
+        },
+        attrs: [
+            'sellable',
+            'combat',
+            'consumption',
+        ],
+    },
+    {
+        name: 'Gold Arrow',
+        type: 'consumable',
+        tool: 'arrow',
+        icon: GoldArrowIcon,
+        description: 'This is a Gold Arrow, you can use it in combat',
+        level: 40,
+        vendor_price: 4,
+        skill_boost: 'combat',
+        boost: {
+            attack: 24,
+        },
+        attrs: [
+            'sellable',
+            'combat',
+            'consumption',
+        ],
+    },
+    {
+        name: 'Cobalt Arrow',
+        type: 'consumable',
+        tool: 'arrow',
+        icon: CobaltArrowIcon,
+        description: 'This is a Cobalt Arrow, you can use it in combat',
+        level: 55,
+        vendor_price: 5,
+        skill_boost: 'combat',
+        boost: {
+            attack: 30,
+        },
+        attrs: [
+            'sellable',
+            'combat',
+            'consumption',
+        ],
+    },
+    {
+        name: 'Obsidian Arrow',
+        type: 'consumable',
+        tool: 'arrow',
+        icon: ObsidianArrowIcon,
+        description: 'This is a Obsidian Arrow, you can use it in combat',
+        level: 70,
+        vendor_price: 6,
+        skill_boost: 'combat',
+        boost: {
+            attack: 36,
+        },
+        attrs: [
+            'sellable',
+            'combat',
+            'consumption',
+        ],
     },
 ]
