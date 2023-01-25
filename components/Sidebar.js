@@ -28,7 +28,7 @@ export default function Sidebar() {
                             Alpha
                         </span>
                         <span className="bg-lime-100 text-lime-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-lime-200 dark:text-lime-900">
-                            v0.5.13
+                            v0.6.15a
                         </span>
                         {/*<button type="button"*/}
                         {/*        className="ml-auto -mx-1.5 -my-1.5 bg-blue-50 text-blue-900 rounded-lg focus:ring-2 focus:ring-blue-400 p-1 hover:bg-blue-200 inline-flex h-6 w-6 dark:bg-blue-900 dark:text-blue-400 dark:hover:bg-blue-800"*/}
