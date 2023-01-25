@@ -3,13 +3,14 @@ import { RadioGroup } from '@headlessui/react'
 import Image from "next/image";
 import { useGatheringStore } from "../store/gathering";
 
-export default function RadioPotions({ choices}) {
-    const [selected, setSelected] = useState(choices.items[0])
+export default function RadioPotions({ choices }) {
+    const [selected, setSelected] = useState(choices[0])
+
 
     const store = useGatheringStore()
 
     useEffect(() => {
-        store.changeWoodcuttingPotionPercentage(selected.percentage)
+        store.changeWoodcuttingPotionPercentage(selected.boost.speed_percentage)
     }, [selected, store])
 
     return (
@@ -18,7 +19,7 @@ export default function RadioPotions({ choices}) {
                 <RadioGroup value={selected} onChange={setSelected}>
                     <RadioGroup.Label className="sr-only"></RadioGroup.Label>
                     <div className="space-y-3">
-                        {choices.items.map((choice) => (
+                        {choices.map((choice) => choice.boost.hasOwnProperty("speed_percentage") ? (
                             <RadioGroup.Option
                                 key={choice.name}
                                 value={choice}
@@ -55,7 +56,7 @@ export default function RadioPotions({ choices}) {
                                                             checked ? 'text-sky-100' : 'text-gray-600'
                                                         }`}
                                                     >
-                                                        <span>{choice.percentage} %</span>
+                                                        <span>{choice.boost.speed_percentage} %</span>
 
                                                     </RadioGroup.Description>
                                                 </div>
@@ -69,7 +70,7 @@ export default function RadioPotions({ choices}) {
                                     </>
                                 )}
                             </RadioGroup.Option>
-                        ))}
+                        ) : "")}
                     </div>
                 </RadioGroup>
             </div>

@@ -3,7 +3,7 @@ import RadioPotions from '/components/RadioPotions'
 import RadioTools from '/components/RadioTools'
 import { woodcutting, timers } from '/data/gathering'
 import { hatchet } from '/data/tools'
-import { gathering } from '/data/potions'
+import { gather } from '/data/potions'
 
 import { useState, useEffect } from 'react'
 import { useGatheringStore } from "../../store/gathering";
@@ -28,7 +28,7 @@ export default function Woodcutting() {
         <div className="flex">
             <RadioGathering choices={woodcutting} timers={timers} type={"woodcutting"} />
             <RadioTools choices={hatchet} />
-            <RadioPotions choices={gathering} />
+            <RadioPotions choices={gather} />
             <div className="w-1/2 h-1/6 grid grid-cols-1 grid-rows-5">
                 <div className="">
                     <label htmlFor="quantity" className="block mb-2 text-sm font-medium text-white dark:text-white">
@@ -48,7 +48,7 @@ export default function Woodcutting() {
                     <span>Tool &middot; {store.woodcutting.tool_percentage}%</span>
                 </div>
                 <div className="text-white">
-                    <span>Potion &middot; {store.woodcutting.potion_percentage}</span>
+                    <span>Potion &middot; {store.woodcutting.potion_percentage}%</span>
                 </div>
                 <div className={"text-white font-normal"}>
                     <span>Total &middot; {(total - (total % 1)).toFixed(0 )} Hrs, {((total % 1) * 60).toFixed(0)} Min</span>
