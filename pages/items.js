@@ -7,6 +7,7 @@ import {
     spades,
     swords,
     hammers,
+    bows,
     helmets,
     bodies,
     boots,
@@ -18,6 +19,7 @@ import {
     potions,
     fishes,
     fruits,
+    arrows,
 } from "/data/items/consumable";
 
 import {
@@ -83,6 +85,13 @@ export default function Items() {
                     )
                 }
                 {
+                    bows.map(
+                        (bow) => (
+                            <ItemCard key={bow.name} item={bow} />
+                        )
+                    )
+                }
+                {
                     helmets.map(
                         (helmet) => (
                             <ItemCard key={helmet.name} item={helmet} />
@@ -135,6 +144,13 @@ export default function Items() {
                     fruits.map(
                         (fruit) => (
                             <ItemCard key={fruit.name} item={fruit} />
+                        )
+                    )
+                }
+                {
+                    arrows.map(
+                        (arrow) => (
+                            <ItemCard key={arrow.name} item={arrow} />
                         )
                     )
                 }
