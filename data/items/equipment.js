@@ -58,6 +58,14 @@ import GoldHammerIcon from '/public/images/weapon-gold-hammer.png'
 import CobaltHammerIcon from '/public/images/weapon-cobalt-hammer.png'
 import ObsidianHammerIcon from '/public/images/weapon-obsidian-hammer.png'
 
+//// Bows
+import WoodBowIcon from '/public/images/bow-wood.png'
+import CopperBowIcon from '/public/images/bow-copper.png'
+import IronBowIcon from '/public/images/bow-iron.png'
+import SilverBowIcon from '/public/images/bow-silver.png'
+import GoldBowIcon from '/public/images/bow-gold.png'
+import CobaltBowIcon from '/public/images/bow-cobalt.png'
+import ObsidianBowIcon from '/public/images/bow-obsidian.png'
 
 /////////////////////
 //    EQUIPMENT    //
@@ -923,6 +931,128 @@ export const hammers = [
             'combat',
         ]
     }
+]
+
+export const bows = [
+    {
+        name: 'Wood Bow',
+        type: 'weapon',
+        tool: 'bow',
+        icon: WoodBowIcon,
+        description: 'This is a Wood Bow. You can use it in combat.',
+        level: 1,
+        vendor_price: 16,
+        stats: {
+            attack: 3,
+        },
+        attrs: [
+            'equipment',
+            'sellable',
+            'combat',
+        ]
+    },
+    {
+        name: 'Copper Bow',
+        type: 'weapon',
+        tool: 'bow',
+        icon: CopperBowIcon,
+        description: 'This is a Copper Bow. You can use it in combat.',
+        level: 1,
+        vendor_price: 32,
+        stats: {
+            attack: 6,
+        },
+        attrs: [
+            'equipment',
+            'sellable',
+            'combat',
+        ]
+    },
+    {
+        name: 'Iron Bow',
+        type: 'weapon',
+        tool: 'bow',
+        icon: IronBowIcon,
+        description: 'This is a Iron Bow. You can use it in combat.',
+        level: 10,
+        vendor_price: 48,
+        stats: {
+            attack: 12,
+        },
+        attrs: [
+            'equipment',
+            'sellable',
+            'combat',
+        ]
+    },
+    {
+        name: 'Silver Bow',
+        type: 'weapon',
+        tool: 'bow',
+        icon: SilverBowIcon,
+        description: 'This is a Silver Bow. You can use it in combat.',
+        level: 25,
+        vendor_price: 64,
+        stats: {
+            attack: 18,
+        },
+        attrs: [
+            'equipment',
+            'sellable',
+            'combat',
+        ]
+    },
+    {
+        name: 'Gold Bow',
+        type: 'weapon',
+        tool: 'bow',
+        icon: GoldBowIcon,
+        description: 'This is a Gold Bow. You can use it in combat.',
+        level: 40,
+        vendor_price: 80,
+        stats: {
+            attack: 24,
+        },
+        attrs: [
+            'equipment',
+            'sellable',
+            'combat',
+        ]
+    },
+    {
+        name: 'Cobalt Bow',
+        type: 'weapon',
+        tool: 'bow',
+        icon: CobaltBowIcon,
+        description: 'This is a Cobalt Bow. You can use it in combat.',
+        level: 55,
+        vendor_price: 96,
+        stats: {
+            attack: 30,
+        },
+        attrs: [
+            'equipment',
+            'sellable',
+            'combat',
+        ]
+    },
+    {
+        name: 'Obsidian Bow',
+        type: 'weapon',
+        tool: 'bow',
+        icon: ObsidianBowIcon,
+        description: 'This is a Obsidian Bow. You can use it in combat.',
+        level: 70,
+        vendor_price: 112,
+        stats: {
+            attack: 36,
+        },
+        attrs: [
+            'equipment',
+            'sellable',
+            'combat',
+        ]
+    },
 ]
 
 export const helmets = [
